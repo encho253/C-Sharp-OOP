@@ -1,7 +1,7 @@
-﻿using System.Text;
-
-namespace Mobile_Phone_Device
+﻿namespace Mobile_Phone_Device
 {
+    using System.Text;
+
     public class Display
     {
         private double? size;
@@ -9,19 +9,21 @@ namespace Mobile_Phone_Device
 
         public Display()
         {
+        }
 
-        }       
-        public Display(double? size,string colors)
+        public Display(double? size, string colors)
         {
             this.Size = size;
             this.NumberOfColors = colors;
         }
+
         public double? Size
         {
             get
             {
                 return this.size;
             }
+
             set
             {
                 this.size = value;
@@ -34,11 +36,13 @@ namespace Mobile_Phone_Device
             {
                 return this.numberOfColors;
             }
+
             set
             {
                 this.numberOfColors = value;
             }
         }
+
         public override string ToString()
         {
             StringBuilder builder = new StringBuilder();

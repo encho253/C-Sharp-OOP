@@ -6,12 +6,13 @@
     {
         public void PrintPhones()
         {
-            GSM[] mobilePhones = CreatePhones();
+            GSM[] mobilePhones = this.CreatePhones();
             foreach (var item in mobilePhones)
             {
                 Console.WriteLine(item);
             }
         }
+
         public GSM[] CreatePhones()
         {
             GSM[] mobilePhones =
@@ -24,9 +25,10 @@
 
             return mobilePhones;
         }
+
         public void DisplayInfoIphone4S()
         {
-            Console.WriteLine(GSM.iphone4s);
+            Console.WriteLine(GSM.Iphone4s);
         }
     }
 }
