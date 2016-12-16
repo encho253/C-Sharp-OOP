@@ -16,6 +16,12 @@
             listArray.Add("5555555");
 
             listArray.RemoveAt(6);
+            listArray.RemoveAt(1);
+            listArray.RemoveAt(0);
+
+
+            listArray.Add("Pesho");
+            listArray.Add("Gosho");
 
             foreach (var item in listArray.ListArray)
             {

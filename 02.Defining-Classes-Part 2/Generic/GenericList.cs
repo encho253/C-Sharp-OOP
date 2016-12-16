@@ -58,16 +58,17 @@
             if (index == this.ListArray.Length)
             {
                 ResizeArray(1);
-            }
+            }           
 
             this.ListArray[index] = element;
         }
 
-        public void RemoveAt(int index)
+        public void RemoveAt(int indexNumber)
         {
             int j = 1;
+            index--;
 
-            if (index > this.ListArray.Length || index < 0)
+            if (indexNumber > this.ListArray.Length || indexNumber < 0)
             {
                 throw new IndexOutOfRangeException();
             }
@@ -75,7 +76,7 @@
             {
                 for (int i = 0; i < this.ListArray.Length; i++)
                 {
-                    if (i != index)
+                    if (i != indexNumber)
                     {
                         this.ListArray[j - 1] = this.ListArray[i];
                         j++;                 
