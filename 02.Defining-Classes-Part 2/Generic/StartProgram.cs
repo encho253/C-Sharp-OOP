@@ -4,9 +4,10 @@
 
     public class StartProgram
     {
-        static void Main()
+        public static void Main()
         {
             GenericList<string> listArray = new GenericList<string>();
+
             listArray.Add("5");
             listArray.Add("55");
             listArray.Add("555");
@@ -19,10 +20,11 @@
             listArray.RemoveAt(1);
             listArray.RemoveAt(0);
 
+            listArray.Clear();
 
             listArray.Add("Pesho");
             listArray.Add("Gosho");
-
+           
             foreach (var item in listArray.ListArray)
             {
                 Console.WriteLine(item);

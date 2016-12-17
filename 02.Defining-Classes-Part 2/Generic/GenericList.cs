@@ -1,11 +1,11 @@
 ﻿namespace Generic
 {
-    using Generic;
     using System;
+    using Generic;
 
     public class GenericList<T>
     {
-        const int DefaultSize = 1;
+        private const int DefaultSize = 1;
         private int index;
 
         public GenericList()
@@ -22,14 +22,63 @@
             {
                 return this.ListArray[index];
             }
+
             set
             {
                 if (this.index < 0 || this.index > this.ListArray.Length)
                 {
                     throw new IndexOutOfRangeException();
                 }
+
                 this.ListArray[index] = value;
             }
+        }
+       
+        public void Add(T element)
+        {
+            this.index++;
+
+            if (this.index == this.ListArray.Length)
+            {
+                this.ResizeArray(1);
+            }
+
+            this.ListArray[this.index] = element;
+        }
+
+        public void RemoveAt(int indexNumber)
+        {
+            int j = 1;
+            this.index--;
+
+            if (indexNumber > this.ListArray.Length || indexNumber < 0)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            else
+            {
+                for (int i = 0; i < this.ListArray.Length; i++)
+                {
+                    if (i != indexNumber)
+                    {
+                        this.ListArray[j - 1] = this.ListArray[i];
+                        j++;
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+            }
+
+            this.ResizeArray(-1);
+        }
+
+        public void Clear()
+        {
+            var nullArray = new T[0];
+            this.ListArray = nullArray;
+            this.index = -1;
         }
 
         private void ResizeArray(int size)
@@ -45,49 +94,10 @@
                 else
                 {
                     break;
-                }              
+                }
             }
 
             this.ListArray = newList;
-        }
-
-        public void Add(T element)
-        {
-            index++;
-
-            if (index == this.ListArray.Length)
-            {
-                ResizeArray(1);
-            }           
-
-            this.ListArray[index] = element;
-        }
-
-        public void RemoveAt(int indexNumber)
-        {
-            int j = 1;
-            index--;
-
-            if (indexNumber > this.ListArray.Length || indexNumber < 0)
-            {
-                throw new IndexOutOfRangeException();
-            }
-            else
-            {
-                for (int i = 0; i < this.ListArray.Length; i++)
-                {
-                    if (i != indexNumber)
-                    {
-                        this.ListArray[j - 1] = this.ListArray[i];
-                        j++;                 
-                    }
-                    else
-                    {
-                        continue;                       
-                    }
-                }
-            }
-            ResizeArray(-1);
         }
     }
 }
