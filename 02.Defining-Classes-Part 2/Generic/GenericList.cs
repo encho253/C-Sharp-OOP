@@ -1,9 +1,9 @@
 ﻿namespace Generic
 {
     using System;
-    using Generic;
+    using System.Text;
 
-    public class GenericList<T>
+    public class GenericList<T> where T : IComparable
     {
         private const int DefaultSize = 1;
         private int index;
@@ -33,7 +33,7 @@
                 this.ListArray[index] = value;
             }
         }
-       
+
         public void Add(T element)
         {
             this.index++;
@@ -79,6 +79,64 @@
             var nullArray = new T[0];
             this.ListArray = nullArray;
             this.index = -1;
+        }
+
+        public int IndexOf(T value)
+        {
+            int valueIndex = -1;
+
+            for (int i = 0; i < this.ListArray.Length; i++)
+            {
+                if (value.ToString() == this.ListArray[i].ToString())
+                {
+                    valueIndex = i;
+                    break;
+                }
+            }
+
+            return valueIndex;
+        }
+       
+        public T Min()
+        {
+            T min = this.ListArray[0];
+
+            for (int i = 0; i < this.ListArray.Length; i++)
+            {
+                if (min.CompareTo(this.ListArray[i]) > 0)
+                {
+                    min = this.ListArray[i];
+                }
+            }
+
+            return min;
+        }
+
+        public T Max()
+        {
+            T max = this.ListArray[0];
+
+            for (int i = 0; i < this.ListArray.Length; i++)
+            {
+                if (max.CompareTo(this.ListArray[i]) < 0)
+                {
+                    max = this.ListArray[i];
+                }
+            }
+
+            return max;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+
+            foreach (var item in this.ListArray)
+            {
+                builder.Append(item).Append("\r\n");
+            }
+
+            return builder.ToString();
         }
 
         private void ResizeArray(int size)

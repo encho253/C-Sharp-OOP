@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Point3D", "Point3D\Point3D.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic", "Generic\Generic.csproj", "{66E94800-184D-4DAF-BED4-91C0C232EEEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{5A6F71E4-BD45-40C3-9250-16C84B9A0383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersionAttribute", "VersionАttribute\VersionAttribute.csproj", "{6D8F2919-DCF9-4290-8518-34DABC1A0A70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{66E94800-184D-4DAF-BED4-91C0C232EEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66E94800-184D-4DAF-BED4-91C0C232EEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66E94800-184D-4DAF-BED4-91C0C232EEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A6F71E4-BD45-40C3-9250-16C84B9A0383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A6F71E4-BD45-40C3-9250-16C84B9A0383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A6F71E4-BD45-40C3-9250-16C84B9A0383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A6F71E4-BD45-40C3-9250-16C84B9A0383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D8F2919-DCF9-4290-8518-34DABC1A0A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8F2919-DCF9-4290-8518-34DABC1A0A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8F2919-DCF9-4290-8518-34DABC1A0A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8F2919-DCF9-4290-8518-34DABC1A0A70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

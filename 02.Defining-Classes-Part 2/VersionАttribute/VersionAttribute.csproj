@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EB712AFB-02AA-4C0F-BC68-EE78F072417B}</ProjectGuid>
+    <ProjectGuid>{6D8F2919-DCF9-4290-8518-34DABC1A0A70}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Point3D</RootNamespace>
-    <AssemblyName>Point3D</AssemblyName>
+    <RootNamespace>VersionАttribute</RootNamespace>
+    <AssemblyName>VersionАttribute</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,19 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculations\Distance.cs" />
-    <Compile Include="Path\SavePoint.cs" />
-    <Compile Include="StartProgram.cs" />
-    <Compile Include="Path\PathStorage.cs" />
-    <Compile Include="3DPoints\Point3d.cs" />
+    <Compile Include="AssemblyVersionAttribute.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="StartMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="TextFiles\01.textFile.txt" />
-    <Content Include="TextFiles\02.textFile.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
