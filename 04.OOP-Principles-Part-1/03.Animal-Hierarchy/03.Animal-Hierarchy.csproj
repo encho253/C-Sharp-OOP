@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{742B221C-74CE-4D2A-8446-9173CB98A881}</ProjectGuid>
+    <ProjectGuid>{71E4D744-D654-4EF7-95D9-B15C1EF6AF9E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_02.Students_And_Workers</RootNamespace>
-    <AssemblyName>02.Students-And-Workers</AssemblyName>
+    <RootNamespace>_03.Animal_Hierarchy</RootNamespace>
+    <AssemblyName>03.Animal-Hierarchy</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Human.cs" />
-    <Compile Include="SortedExtensionMethods.cs" />
+    <Compile Include="Animal.cs" />
+    <Compile Include="AnimalSex.cs" />
+    <Compile Include="CalculateExtensionMethod.cs" />
+    <Compile Include="Cat.cs" />
+    <Compile Include="Dog.cs" />
+    <Compile Include="Frog.cs" />
+    <Compile Include="ISound.cs" />
+    <Compile Include="Kitten.cs" />
     <Compile Include="StartProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="Worker.cs" />
+    <Compile Include="Tomcat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -37,6 +37,7 @@
                 {
                     throw new ArgumentException("The name must be more than 5 characters");
                 }
+
                 this.name = value;
             }
         }

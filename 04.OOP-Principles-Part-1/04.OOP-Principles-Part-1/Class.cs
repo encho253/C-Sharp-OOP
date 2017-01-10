@@ -37,6 +37,7 @@
                 {
                     throw new ArgumentException("The comment must be more than 20 characters");
                 }
+
                 this.comment = value;
             }
         }
