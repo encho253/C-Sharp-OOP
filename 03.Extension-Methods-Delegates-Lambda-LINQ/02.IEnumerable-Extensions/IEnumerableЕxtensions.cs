@@ -19,9 +19,16 @@
         public static decimal Product<T>(this IEnumerable<T> collection) where T : IConvertible
         {
             decimal product = 0;
+            bool oneTime = true;
 
             foreach (var item in collection)
             {
+                if (oneTime)
+                {
+                    product = Convert.ToDecimal(item);
+                    oneTime = false;
+                }
+
                 product *= Convert.ToDecimal(item);
             }
 
@@ -31,18 +38,18 @@
         public static dynamic Min<T>(this IEnumerable<T> collection)
         {
             decimal min = 0;
-            decimal finalMin = 0;
+            bool oneTime = true;
 
             foreach (var item in collection)
             {
-                min =(dynamic)item;
-                if (finalMin == 0)
+                if (oneTime)
                 {
-                    finalMin = min;
-                }            
-                if (min < finalMin)
+                    min = Convert.ToDecimal(item);
+                    oneTime = false;
+                }
+                if (min > Convert.ToDecimal(item))
                 {
-                    min = (dynamic)item;
+                    min = Convert.ToDecimal(item);
                 }
             }
 
