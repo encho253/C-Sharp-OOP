@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SchoolClasses", "..\sdsdfsdfs\01.SchoolClasses\01.SchoolClasses.csproj", "{336DAADE-00EB-4990-B81F-CA192A43F781}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SchoolClasses", "04.OOP-Principles-Part-1\01.SchoolClasses.csproj", "{336DAADE-00EB-4990-B81F-CA192A43F781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Students-And-Workers", "..\sdsdfsdfs\02.Students-And-Workers\02.Students-And-Workers.csproj", "{742B221C-74CE-4D2A-8446-9173CB98A881}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Students-And-Workers", "02.Students-And-Workers\02.Students-And-Workers.csproj", "{742B221C-74CE-4D2A-8446-9173CB98A881}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Animal-Hierarchy", "..\sdsdfsdfs\03.Animal-Hierarchy\03.Animal-Hierarchy.csproj", "{71E4D744-D654-4EF7-95D9-B15C1EF6AF9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Animal-Hierarchy", "03.Animal-Hierarchy\03.Animal-Hierarchy.csproj", "{71E4D744-D654-4EF7-95D9-B15C1EF6AF9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
