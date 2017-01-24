@@ -8,7 +8,7 @@
         public static IEnumerable<Worker> SortWorkers(this IEnumerable<Worker> collection)
         {
             IEnumerable<Worker> sortedCollection = collection
-                                                  .OrderBy(x => x.MoneyPerHour(x.WorkHoursPerDay, x.WeekSalary));
+                                                  .OrderBy(x => x.MoneyPerHour());
 
             return sortedCollection;
         }

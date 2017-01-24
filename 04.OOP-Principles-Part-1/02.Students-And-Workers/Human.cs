@@ -3,10 +3,16 @@
     using System;
     using System.Text;
 
-    public abstract class Human 
+    public abstract class Human : IHuman
     {
         private string firstName;
         private string lastName;
+
+        public Human(string firstName, string lastName)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+        }
 
         public string FirstName
         {

@@ -1,14 +1,12 @@
 ﻿namespace _02.Students_And_Workers
 {
-    using System;
     using System.Text;
 
-    public class Student : Human
+    public class Student : Human, IHuman, IStudent
     {
         public Student(string firstName, string lastName, string grade)
+            :base(firstName,lastName)
         {
-            this.FirstName = firstName;
-            this.LastName = lastName;
             this.Grade = grade;
         }
 
